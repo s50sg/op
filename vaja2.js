@@ -17,10 +17,9 @@ function fndNum(a, b){
   }
 }
 function  main(){
-  for(i = 100; i <= 10000; i++){
-    for(j = 100; j <= 10000; j++){
+  for(i = 200; i <= 10000; i++){
+    for(j = 200; j <= 10000; j++){
       fndNum(i, j);
-      console.log(i, j, sumDeviders(j));
     }
   }
 }
