@@ -1,26 +1,27 @@
 function sumDeviders(a){
   var t = 0;
-  for(var i = 0; i <= a/2; i++){
+  for (var i = 1; i <= a/2; i++){
     if (a % i == 0){
-      t = t + i;
+      t += i;
     }
   }
   return t;
 }
-function fndNum(a, b){
-  a_sum = sumDeviders(a);
-  b_sum = sumDeviders(b);
 
-  if (a == b_sum && b == a_sum){
-    console.log(a)
-    console.log(b)
+function mkArr(x, y){
+  var arr = []; 
+  for (var i = x; i <= y; i++){
+    sum = sumDeviders(i);
+    arr[i] = sum;
   }
+  return arr;
 }
-function  main(){
-  for(i = 200; i <= 10000; i++){
-    for(j = 200; j <= 10000; j++){
-      fndNum(i, j);
+function prntNum(x, y){
+  seznam = mkArr(x, y);
+  for (i = x; i <= y; i++){
+    if (seznam[seznam[i]] == i && seznam[i] < i){
+      console.log(seznam[i], i);
     }
   }
 }
-main();
+prntNum(0, 100000);
