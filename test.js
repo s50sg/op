@@ -24,4 +24,4 @@ function prntNum(x, y){
     }
   }
 }
-prntNum(0, 10000);
+seznam = mkArr(0, 100000);
