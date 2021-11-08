@@ -14,10 +14,10 @@ for (var i = 0; i < n; i++) {
   }
   if (sum % 2 == 0) {
     sum = 0;
-    console.log("ni napake");
+    console.log("ni napake v vrstici: ", i);
   }
   else {
-    console.log("napaka");
+    console.log("napaka v vrstici: ", i);
   }
 }
 for (var j = 0; j < m; j++) {
@@ -26,9 +26,9 @@ for (var j = 0; j < m; j++) {
   }
   if (sum % 2 == 0) {
     sum = 0;
-    console.log("ni napake");
+    console.log("ni napake v stolpcu: ", j);
   }
   else {
-    console.log("napaka");
+    console.log("napaka v stolpcu: ", j);
   }
 }
